@@ -80,7 +80,7 @@ footer.page-footer {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background-image: url('/assets/images/amm-logo.png');
+  background-image: url('https://amm-brasil.github.io/i-encontro-sp/assets/images/amm-logo.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
