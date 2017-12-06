@@ -22,7 +22,6 @@ p {
 .parallax-container {
   min-height: 380px;
   line-height: 0;
-  height: auto;
   color: rgba(255,255,255,.9);
 }
   .parallax-container .section {
@@ -45,6 +44,18 @@ p {
   }
 }
 
+@media only screen and (min-width: 900px) {
+  .parallax-container {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .parallax-container {
+    height: 600px;
+  }
+}
+
 .icon-block {
   padding: 0 15px;
 }
@@ -54,4 +65,28 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+/****************************************/
+.header {
+  color: #dd9d18;
+  text-shadow: 0 0 5px #000;
+}
+#logo-container {
+  position: relative;
+  margin-top: -20px;
+}
+#logo-container .amm-logo {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url('/assets/images/amm-logo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#logo-container .estadual {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 30px;
 }

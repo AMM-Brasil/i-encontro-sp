@@ -20,8 +20,9 @@
   <link rel="shortcut icon" href="{{ '/assets/images/favicon/favicon.ico' | relative_url }}">
   <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="{{ '/assets/images/favicon/apple-touch-icon.png' | relative_url }}">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{{ '/assets/css/materialdesignicons.min.css' | relative_url }}" type="text/css" rel="stylesheet" media="screen,projection" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <link href="{{ '/assets/css/style.css' | relative_url }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ '/assets/css/style.css' | relative_url }}" type="text/css" rel="stylesheet" media="screen,projection" />
 
   <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -32,30 +33,17 @@
 </head>
 
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">AMM São Paulo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
+        <h1 class="header center">I Encontro Estadual <span class="hide">AMM - SP</span></h1>
+        <h2 class="header center" id="logo-container"><span class="amm-logo"></span><span class="estadual">SÃO PAULO</span></h2>
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="col s12 light"><span style="background: rgba(0,0,0,0.5); padding: 5pxs">12 - 14 jan <i class="material-icons">place</i> Indaiatuba - SP</span></h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+          <a href="https://form.jotformz.com/73056510942655" target="_blank" id="download-button" class="btn-large waves-effect waves-light blue darken-1"><i class="material-icons left">motorcycle</i> INSCREVA-SE</a>
         </div>
         <br><br>
 
@@ -72,28 +60,25 @@
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">attach_money</i></h2>
+            <h5 class="center">Valor da inscrição</h5>
+            <p class="light">Para participar do evento, o custo da inscrição será de <b><em>R$ 60,00</em></b>. Você também pode adquirir em conjunto o <b>pacote de alimentação</b> por mais <b><em>R$ 120,00</em></b>.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            <h5 class="center">Pacote de alimetação</h5>
+            <p class="light">Sexta-feira, apenas janta. Sábado terá café da manhã, almoço e janta. E para o Domingo, café da manhã e almoço.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            <h2 class="center brown-text"><i class="material-icons">people</i></h2>
+            <h5 class="center">Ajude os colaboradores</h5>
+            <p class="light">O evento será realizado dentro do <i>Indaiatuba Moto Fest</i>, onde os organizadores pedem a <strong>colaboração com 1kg de alimento não perecível</strong>.</p>
           </div>
         </div>
       </div>
@@ -106,7 +91,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 white-text light">Sua inscrição é muito importante, contamos com a sua presença!</h5>
         </div>
       </div>
     </div>
@@ -117,60 +102,75 @@
     <div class="section">
 
       <div class="row">
+        <div class="col s12">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4 class="center" id="evento-local">Hotéis</h4>
+          <div class="row">
+            <div class="col s12 m6 right-align">
+              <b>Hotel Viracopos de Indaiatuba</b>
+              <address>
+              Rua Emile Rouede, 109 Jd. Sevilha<br>
+              (19) 3328-0766 / (19) 99529-5400<br>
+              <a href="www.hotelviracopos.com" target="_blank">www.hotelviracopos.com</a>
+          </address> Quarto indivudal: R$ 125,00<br> Quarto duplo: R$ 155,00
+            </div>
+            <div class="col s12 m6">
+              <b>Hotel Alji</b>
+              <address>
+              Av. Visconde de Indaiatuba, 1510<br>
+              (19) 3875-7970 / (19) 3885-6400<br>
+              <a href="www.aljihotel.com.br" target="_blank">www.aljihotel.com.br</a>
+          </address> Quarto indivudal: R$ 169,00<br> Quarto duplo: R$ 189,00
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m6 right-align">
+              <b>Hotel Primavera</b>
+              <address>
+              Av. Francisco de Paula Leite, 762<br>
+              (19) 3835-1632 / (19) 3835-1993
+          </address> Quarto indivudal: R$ 100,00<br> Quarto duplo: R$ 130,00<br> Quarto triplo: R$ 150,00
+            </div>
+            <div class="col s12 m6">
+              <b>Hotel Vitória</b>
+              <address>
+              Av. Presidente Vargas, 3041<br>
+              (19) 3801-8000<br>
+              <a href="http://www.vitoriahoteis.com.br" target="_blank">www.vitoriahoteis.com.br</a>
+          </address> Quarto duplo: R$ 244,80
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <h4 id="evento-local">Local</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.5390342940436!2d-47.20285208549392!3d-23.077355549780293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b4bbea7d0ead%3A0xc89ced741211c386!2sCentro+Esportivo+do+Trabalhador+(CET)!5e0!3m2!1spt-BR!2sbr!4v1512579277448" style="width: 100%" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
 
     </div>
   </div>
 
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="{{ '/assets/images/background3.jpg' | relative_url }}" alt="Unsplashed background img 3"></div>
-  </div>
-
-  <footer class="page-footer teal">
+  <footer class="page-footer black">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <h5 class="white-text">AMM Brasil</h5>
+          <p class="grey-text text-lighten-4">"Fazer o que é preciso do jeito que eu gosto."</p>
 
 
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5 class="white-text">Visite nossos sites!</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="http://amm-brasil.org"><i class="mdi mdi-link-variant"></i> Site oficial</a></li>
+            <li><a class="white-text" href="https://www.facebook.com/AMM-Brazil-Adventist-Motorcycle-Ministry-523949460985403/?fref=pb&hc_location=profile_browser"><i class="mdi mdi-facebook-box" style=""></i> Página no Facebook</a></li>
+            <li><a class="white-text" href="http://fb.com/amm-brasil.agenda"><i class="mdi mdi-calendar"></i> Agenda de eventos</a></li>
           </ul>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
   </footer>
